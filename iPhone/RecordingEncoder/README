@@ -1,0 +1,25 @@
+Recording encoder plugin for Phonegap
+Created by Matt Crider, Jan. 2010.
+mattcrider @ gmail.com
+========================================
+
+This plugin converts audio recorded by phonegap-core (in Linear PCM core audio format) to M4A format
+
+========================================
+
+An example of the stopRecord method which calls the recording encoder:
+
+function stopRecord() {
+	// Stop Phonegap's recording
+	isRecording = false;
+	navigator.notification.activityStop();
+	navigator.audio.stopAudioRecord();
+
+	// Convert the audio file to MP3 format
+	var recordingEncoder = window.plugins.recordingEncoder;
+	// Remove the 'documents' part of the file path, the plugin only wants the file name
+	var file = navigator.audio.src.substr('documents://'.length);
+	// Do the encoding
+	recordingEncoder.encodeRecording(file);
+	// The filename will now be in the documents folder as filename + '.m4a'
+}
