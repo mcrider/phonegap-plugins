@@ -7,12 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
-#import <AVFoundation/AVAssetExportSession.h>
-#import <AVFoundation/AVAsset.h>
-
 #import "PhoneGapCommand.h"
+
 @interface RecordingEncoder : PhoneGapCommand {
 }
 
