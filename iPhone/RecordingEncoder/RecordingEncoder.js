@@ -1,9 +1,10 @@
-/*
- *  This code is adapted from the work of Michael Nachbaur
- *  by Simon Madine of The Angry Robot Zombie Factory
- *  2010-05-04
- *  MIT licensed
-*/
+//
+//  RecordingEncoder.m
+//
+//  Created by Matt Crider, Dec. 2010.
+//  Copyright 2010 Pensive Industries
+//  MIT licensed
+//
 
 /**
  * This class converts the current audio recording to MP3 format
